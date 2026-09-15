@@ -43,9 +43,9 @@ const focusAreas = [
   },
   {
     icon: Monitor,
-    title: "Technology & Digital Skills",
+    title: "Agric Mechanization",
     description:
-      "Web development, data analysis, digital marketing, and computer literacy programs.",
+      "Agric Mechanization, input provision, aggrigation and prossessing import and export of Agricltural product and machinaries and livestock production.",
   },
 ];
 
@@ -58,19 +58,19 @@ const impactStats = [
 
 const programCategories = [
   {
-    title: "Agricultural Training",
+    title: "BDSP. Business Development Service Provision",
     image: trainingSession,
-    courses: ["Crop Farming", "Poultry & Livestock", "Agro-processing", "Farm Management"],
+    
   },
   {
-    title: "Tech Skills",
+    title: "PCVE",
     image: youthDelegates,
-    courses: ["Web Development", "Data Analysis", "Digital Marketing", "Graphic Design"],
+    
   },
   {
-    title: "Business Skills",
+    title: "National Cooperative Submit",
     image: cooperativeSummit,
-    courses: ["Entrepreneurship", "Cooperative Management", "Financial Literacy", "E-Commerce"],
+   
   },
 ];
 
@@ -125,11 +125,11 @@ const Index = () => {
               Who We Are
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Leveraging corporate economy, social entrepreneurship development, ICT, 
+              Leveraging corporate economy, social entrepreneurship development, 
               job creation, good governance and sustainable peace across Nigeria and Africa.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Value driving solutions, building resilience, agribusiness, ICT, knowledge 
+              Value driving solutions, building resilience, agribusiness,knowledge 
               sharing and good governance—empowering youth and women to become active agents 
               of change in their communities.
             </p>
@@ -187,10 +187,7 @@ const Index = () => {
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
               Our Training Programs
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Comprehensive courses designed to equip you with practical skills for
-              sustainable livelihoods.
-            </p>
+            
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -211,14 +208,7 @@ const Index = () => {
                   </h3>
                 </div>
                 <div className="p-6">
-                  <ul className="space-y-2">
-                    {program.courses.map((course, i) => (
-                      <li key={i} className="flex items-center gap-2 text-muted-foreground">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                        {course}
-                      </li>
-                    ))}
-                  </ul>
+                 
                   <Button variant="outline" size="sm" className="mt-4 w-full" asChild>
                     <Link to="/programs">View All Courses</Link>
                   </Button>
@@ -320,11 +310,7 @@ const Index = () => {
                 alt="Community empowerment"
                 className="rounded-2xl shadow-elevated"
               />
-              <div className="absolute -bottom-6 -left-6 bg-accent text-accent-foreground p-6 rounded-xl shadow-card max-w-xs">
-                <p className="font-display font-semibold text-lg">
-                  "Empowering individuals for economic sustainability"
-                </p>
-              </div>
+             
             </div>
           </div>
         </div>
@@ -377,7 +363,6 @@ const Index = () => {
               <h4 className="font-display font-semibold text-lg mb-2">Call Us</h4>
               <p className="text-muted-foreground text-sm">
                 +234-812 322 3339<br />
-                +234-704 468 0182
               </p>
             </div>
             <div className="p-6">
@@ -385,7 +370,7 @@ const Index = () => {
                 <Mail className="w-7 h-7 text-primary" />
               </div>
               <h4 className="font-display font-semibold text-lg mb-2">Email Us</h4>
-              <p className="text-muted-foreground">info@nehemiahfoundation.org</p>
+              <p className="text-muted-foreground">admin.nehemiahfoundation@gmail.com</p>
             </div>
           </div>
         </div>

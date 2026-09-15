@@ -8,9 +8,7 @@ export const strategicPillars = [
     shortTitle: "Cooperative Initiative",
     description: "Nigeria's last mile cooperative initiative, training and certification backbone that holds field coaching into corporate policy change, regulations, project implementation through networking and access to finances.",
     objectives: [
-      "Train 10,000 individuals; register/strengthen 300 cooperatives",
-      "Launch an online academy with micro-courses; certify cooperative leaders",
-      "Recruit and certify field trainers across pilot states"
+  
     ],
     color: "primary"
   },

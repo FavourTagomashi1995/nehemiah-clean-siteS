@@ -28,7 +28,7 @@ const StrategicPillars = () => {
                     ? "bg-primary/10 group-hover:bg-primary/20"
                     : "bg-accent/10 group-hover:bg-accent/20"
                 }`}
-              >
+              >.
                 <pillar.icon
                   className={`w-7 h-7 ${
                     pillar.color === "primary" ? "text-primary" : "text-accent"

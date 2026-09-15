@@ -102,10 +102,6 @@ const About = () => {
               <p className="text-accent font-medium mb-4">CAC/IT/NO 18367</p>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Across Nigeria within cooperative societies and social entrepreneurial 
-                  initiatives to drive economic, peace, and development at the grassroots.
-                </p>
-                <p>
                   From a humble beginning working in rural communities in southern Kaduna 
                   training individuals in agribusiness and other business skills, forming 
                   trainers into cooperative societies.
