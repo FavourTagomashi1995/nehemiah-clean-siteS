@@ -14,7 +14,7 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { courseCategories, getCoursesByCategory } from "@/data/courses";
+// import { courseCategories, getCoursesByCategory } from "@/data/courses";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { CheckCircle, ArrowRight, User, GraduationCap, Briefcase, Users } from "lucide-react";
@@ -85,7 +85,7 @@ const Register = () => {
   });
   const [coopSupport, setCoopSupport] = useState<string[]>([]);
 
-  const availableCourses = selectedCategory ? getCoursesByCategory(selectedCategory) : [];
+  // const availableCourses = selectedCategory ? getCoursesByCategory(selectedCategory) : [];
 
   const handleCourseToggle = (courseId: string) => {
     setSelectedCourses((prev) =>
@@ -394,7 +394,7 @@ const Register = () => {
                     </h3>
                   </div>
 
-                  <div className="space-y-6">
+                  {/* <div className="space-y-6">
                     <div>
                       <Label>Select Training Category *</Label>
                       <Select
@@ -446,7 +446,7 @@ const Register = () => {
                         </div>
                       </div>
                     )}
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Background Information */}

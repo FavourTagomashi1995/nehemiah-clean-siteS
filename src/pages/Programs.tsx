@@ -2,7 +2,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Award, Users, BookOpen } from "lucide-react";
-import { courseCategories } from "@/data/courses";
+// import { courseCategories } from "@/data/courses";
 import trainingImage from "@/assets/image1.jpg";
 import techImage from "@/assets/image2.jpg";
 import businessImage from "@/assets/image3.jpg";
@@ -79,7 +79,7 @@ const Programs = () => {
       </section>
 
       {/* Program Categories */}
-      <section className="section-padding">
+      {/* <section className="section-padding">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -154,7 +154,7 @@ const Programs = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Training Levels */}
       <section className="section-padding bg-secondary">

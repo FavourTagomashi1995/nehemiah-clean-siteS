@@ -163,9 +163,9 @@ const About = () => {
             <div className="bg-primary p-8 md:p-10 rounded-2xl text-primary-foreground">
               <h3 className="font-display text-2xl font-bold mb-4">Our Vision</h3>
               <p className="text-primary-foreground/90 leading-relaxed mb-4">
-                To establish a robust National Cooperative Network that empowers youth and women, 
-                harnessing their skills, talents, and potentials to drive peace, development, 
-                and economic growth across Africa.
+                To build prosperous, peaceful and inclusive societyWhere communities thrive,
+                 opportunities aboundAnd individual especially women and youth-Has the resources, 
+                 support and freedom to reachTheir full potentials
               </p>
               <p className="text-primary-foreground/80 text-sm leading-relaxed">
                 A continent where cooperative values and principles foster inclusive prosperity, 
@@ -177,8 +177,9 @@ const About = () => {
                 Our Mission
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Empower women and youth to become active agents of change, driving economic 
-                development, promoting good governance and fostering sustainable peace.
+                To empower youth and women by promotingvalue-driven solutions for agricultural,
+                 ICT,Entrepreneurship,
+                 Good Governance, ClimateResilience, Sustainable peace and development
               </p>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Value driving solutions, building resilience, agribusiness, ICT, knowledge 

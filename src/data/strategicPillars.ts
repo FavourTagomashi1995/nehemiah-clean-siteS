@@ -91,5 +91,4 @@ export const strategicPillars = [
     color: "primary"
   }
 ];
-
 export const visionStatement = "Build a nationally and continentally respected cooperative-powered prosperity engine that trains citizens, organizes producers, professionalizes value chains, shapes policy, accredits skills, and disciples marketplace leaders in ethics and good governance.";
