@@ -148,7 +148,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Our Core Focus Areas — BDSP
+              Focus Areas — BDSP
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Business Development Service Provider — empowering individuals and 
