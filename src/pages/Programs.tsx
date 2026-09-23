@@ -1,42 +1,15 @@
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Clock, Award, Users, BookOpen } from "lucide-react";
-// import { courseCategories } from "@/data/courses";
-import trainingImage from "@/assets/image1.jpg";
-import techImage from "@/assets/image2.jpg";
-import businessImage from "@/assets/image3.jpg";
-import vocationalImage from "@/assets/image4.jpg"; // optional (or reuse image1)
-
-const categoryImages: Record<string, string> = {
-  agriculture: trainingImage,
-  tech: techImage,
-  business: businessImage,
-  vocational: vocationalImage || trainingImage, // fallback
-};
-
-const trainingFeatures = [
-  {
-    icon: Clock,
-    title: "Flexible Duration",
-    description: "Short courses (2-4 weeks) and professional courses (2-3 months)",
-  },
-  {
-    icon: BookOpen,
-    title: "Practical Learning",
-    description: "Hands-on training with real-world applications",
-  },
-  {
-    icon: Award,
-    title: "Certification",
-    description: "Receive certificates upon successful completion",
-  },
-  {
-    icon: Users,
-    title: "Expert Instructors",
-    description: "Learn from experienced professionals in each field",
-  },
-];
+import {
+  ArrowRight,
+  Users,
+  HandCoins,
+  TrendingUp,
+  ShieldCheck,
+  Handshake,
+  Sprout,
+} from "lucide-react";
 
 const Programs = () => {
   return (
@@ -45,179 +18,249 @@ const Programs = () => {
       <section className="relative py-20 md:py-28 bg-primary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <p className="text-accent font-medium mb-4">Programs & Projects — NATCON</p>
+            <p className="text-accent font-medium mb-4">
+              Cooperative Development
+            </p>
+
             <h1 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
-              National Cooperative Network Programs
+              Building Stronger Communities Through Cooperatives
             </h1>
+
             <p className="text-lg text-primary-foreground/90 leading-relaxed">
-              Comprehensive skill acquisition programs in agriculture, technology,
-              business, and cooperative development designed to empower you for economic
-              sustainability. Register for personalized coaching experience tailored through 
-              guidance on cooperative economics and social entrepreneurship.
+              We support individuals and communities to come together through
+              cooperatives, promoting collective economic participation,
+              income generation, social entrepreneurship, and sustainable
+              livelihoods.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Training Features */}
-      <section className="py-12 bg-secondary border-b border-border">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {trainingFeatures.map((feature, index) => (
-              <div key={index} className="text-center">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                  <feature.icon className="w-6 h-6 text-primary" />
-                </div>
-                <h4 className="font-semibold text-foreground text-sm mb-1">
-                  {feature.title}
-                </h4>
-                <p className="text-muted-foreground text-xs">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Program Categories */}
-      {/* <section className="section-padding">
+      {/* What Is a Cooperative? */}
+      <section className="section-padding">
         <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Our Course Categories
-            </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Choose from our wide range of training programs designed to meet your needs
-              and career goals.
-            </p>
-          </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-primary font-medium mb-3">
+                Understanding Cooperatives
+              </p>
 
-          <div className="space-y-16">
-            {courseCategories.map((category, categoryIndex) => (
-              <div key={category.id} className="scroll-mt-24" id={category.id}>
-                <div
-                  className={`grid lg:grid-cols-2 gap-8 items-start ${
-                    categoryIndex % 2 === 1 ? "lg:flex-row-reverse" : ""
-                  }`}
-                >
-                  <div className={categoryIndex % 2 === 1 ? "lg:order-2" : ""}>
-                    <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-card">
-                      <img
-                        src={categoryImages[category.id] || trainingImage}
-                        alt={category.name}
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-foreground/50 to-transparent" />
-                      <div className="absolute bottom-4 left-4 right-4">
-                        <span className="inline-block bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium">
-                          {category.courses.length} Courses Available
-                        </span>
-                      </div>
-                    </div>
-                  </div>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
+                What Is a Cooperative?
+              </h2>
 
-                  <div className={categoryIndex % 2 === 1 ? "lg:order-1" : ""}>
-                    <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">
-                      {category.name}
-                    </h3>
-                    <p className="text-muted-foreground mb-6">
-                      Comprehensive training programs designed to equip you with practical
-                      skills for sustainable livelihoods and career advancement.
-                    </p>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-5">
+                A cooperative is a group of people who voluntarily come
+                together to achieve shared economic and social goals through
+                collective effort.
+              </p>
 
-                    <div className="grid sm:grid-cols-2 gap-3 mb-6">
-                      {category.courses.slice(0, 8).map((course) => (
-                        <div
-                          key={course.id}
-                          className="flex items-center gap-2 text-sm text-muted-foreground bg-secondary p-3 rounded-lg"
-                        >
-                          <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                          <span className="line-clamp-1">{course.name}</span>
-                        </div>
-                      ))}
-                    </div>
+              <p className="text-muted-foreground leading-relaxed">
+                Members contribute, participate in decision-making, share
+                opportunities, and work together to improve their livelihoods
+                and strengthen their communities.
+              </p>
+            </div>
 
-                    {category.courses.length > 8 && (
-                      <p className="text-sm text-muted-foreground mb-4">
-                        + {category.courses.length - 8} more courses available
-                      </p>
-                    )}
+            <div className="bg-secondary rounded-2xl p-8 md:p-10">
+              <Users className="w-12 h-12 text-primary mb-5" />
 
-                    <Button asChild>
-                      <Link to="/register">
-                        Register for {category.name}
-                        <ArrowRight size={18} />
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            ))}
+              <h3 className="font-display text-2xl font-bold text-foreground mb-4">
+                Strength in Collective Action
+              </h3>
+
+              <p className="text-muted-foreground leading-relaxed">
+                Cooperatives create opportunities for members to combine
+                resources, knowledge, skills, and ideas to achieve goals that
+                may be difficult to achieve individually.
+              </p>
+            </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
-      {/* Training Levels */}
+      {/* Importance of Cooperatives */}
       <section className="section-padding bg-secondary">
         <div className="container mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <p className="text-primary font-medium mb-3">
+              Why Cooperatives Matter
+            </p>
+
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Training Levels
+              Benefits of Cooperative Membership
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Our programs are structured to accommodate learners at different skill levels.
+
+            <p className="text-muted-foreground text-lg">
+              Cooperatives help individuals and communities create sustainable
+              economic opportunities through collective participation.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                level: "Beginner",
-                duration: "2-4 weeks",
+                icon: HandCoins,
+                title: "Access to Resources",
                 description:
-                  "Perfect for those new to the field. Learn foundational concepts and basic skills.",
+                  "Members can combine resources and improve access to financial and economic opportunities.",
               },
               {
-                level: "Intermediate",
-                duration: "4-8 weeks",
+                icon: TrendingUp,
+                title: "Income Generation",
                 description:
-                  "Build on existing knowledge with advanced techniques and practical applications.",
+                  "Cooperatives support members in developing sustainable income-generating activities.",
               },
               {
-                level: "Advanced",
-                duration: "2-3 months",
+                icon: Handshake,
+                title: "Collective Strength",
                 description:
-                  "Master-level training for professionals seeking specialized expertise.",
+                  "Working together creates stronger opportunities for members and their communities.",
               },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="bg-card p-6 rounded-xl border border-border shadow-soft text-center"
-              >
-                <span className="inline-block bg-primary/10 text-primary px-4 py-1 rounded-full text-sm font-medium mb-4">
-                  {item.level}
-                </span>
-                <p className="text-accent font-semibold mb-2">{item.duration}</p>
-                <p className="text-muted-foreground text-sm">{item.description}</p>
-              </div>
-            ))}
+              {
+                icon: ShieldCheck,
+                title: "Shared Responsibility",
+                description:
+                  "Members participate in decisions and share responsibility for the success of the cooperative.",
+              },
+              {
+                icon: Sprout,
+                title: "Sustainable Livelihoods",
+                description:
+                  "Cooperative activities can help members build more sustainable livelihoods.",
+              },
+              {
+                icon: Users,
+                title: "Community Development",
+                description:
+                  "Strong cooperatives contribute to economic participation and community development.",
+              },
+            ].map((benefit, index) => {
+              const Icon = benefit.icon;
+
+              return (
+                <div
+                  key={index}
+                  className="bg-card p-6 rounded-xl border border-border shadow-soft"
+                >
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
+                    <Icon className="w-6 h-6 text-primary" />
+                  </div>
+
+                  <h3 className="font-display text-xl font-bold text-foreground mb-3">
+                    {benefit.title}
+                  </h3>
+
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {benefit.description}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
+      {/* What We Support */}
+      <section className="section-padding">
+        <div className="container mx-auto">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-primary font-medium mb-3">
+              Cooperative Support
+            </p>
+
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Supporting Members to Grow Together
+            </h2>
+
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+              We support cooperative members with knowledge, capacity
+              development, social entrepreneurship, financial awareness, and
+              income-generation opportunities that promote sustainable
+              livelihoods.
+            </p>
+
+            <div className="grid sm:grid-cols-2 gap-4 text-left">
+              {[
+                "Cooperative membership and participation",
+                "Income-generating activities",
+                "Social entrepreneurship",
+                "Financial management awareness",
+                "Cooperative capacity development",
+                "Sustainable livelihood opportunities",
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="flex items-center gap-3 bg-secondary p-4 rounded-lg"
+                >
+                  <span className="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
+                  <span className="text-foreground text-sm">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Who Can Join */}
+      <section className="section-padding bg-secondary">
+        <div className="container mx-auto">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-primary font-medium mb-3">
+              Join the Cooperative
+            </p>
+
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-5">
+              Who Can Join?
+            </h2>
+
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+              Individuals and groups interested in collective economic
+              participation, entrepreneurship, agriculture, income generation,
+              and community development can express their interest in joining
+              the cooperative.
+            </p>
+
+            <div className="flex flex-wrap justify-center gap-3">
+              {[
+                "Farmers",
+                "Youth",
+                "Women",
+                "Entrepreneurs",
+                "Small Business Owners",
+                "Community Groups",
+              ].map((group) => (
+                <span
+                  key={group}
+                  className="px-4 py-2 bg-card border border-border rounded-full text-sm text-foreground"
+                >
+                  {group}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Join CTA */}
       <section className="section-padding">
         <div className="container mx-auto">
           <div className="bg-primary rounded-2xl p-8 md:p-12 lg:p-16 text-center">
+            <Users className="w-12 h-12 text-accent mx-auto mb-5" />
+
             <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-              Ready to Start Your Journey?
+              Interested in Joining Our Cooperative?
             </h2>
+
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
-              Register today and take the first step towards acquiring new skills for a
-              sustainable livelihood.
+              Become part of a community working together to create economic
+              opportunities, strengthen livelihoods, and promote sustainable
+              development.
             </p>
+
             <Button variant="hero" size="xl" asChild>
-              <Link to="/register">
-                Register Now
+              <Link to="/contact">
+                Join the Cooperative
                 <ArrowRight size={20} />
               </Link>
             </Button>

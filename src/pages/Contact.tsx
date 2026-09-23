@@ -42,6 +42,14 @@ const contactInfo = [
     details: ["info@nehemiahfoundation.org"],
     description: "We respond within 24-48 hours",
   },
+  {
+    icon: "website",
+    title: "Website",
+    details: ["www.nehemiahfoundation.org"],
+    description: "Explore our online presence",
+  },
+  
+  
 ];
 
 const Contact = () => {

@@ -428,9 +428,7 @@ const About = () => {
                   <ArrowRight size={20} />
                 </Link>
               </Button>
-              <Button variant="heroOutline" size="xl" asChild>
-                <Link to="/register">Register for Training</Link>
-              </Button>
+
             </div>
           </div>
         </div>

@@ -356,53 +356,7 @@ const Projects = () => {
 
           {/* =====================================================
               PROJECT PHASES
-          ===================================================== */}
-          <div className="mb-16">
-
-            <div className="flex items-center gap-3 mb-6">
-
-              <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
-                <Layers className="w-6 h-6 text-accent" />
-              </div>
-
-              <h3 className="font-display text-2xl font-bold text-foreground">
-                Implementation Phases
-              </h3>
-
-            </div>
-
-            <div className="space-y-4">
-
-              {natcon.phases.map((phase, index) => (
-                <div
-                  key={index}
-                  className="bg-card p-6 rounded-xl border border-border shadow-soft"
-                >
-
-                  <div className="flex items-start gap-4">
-
-                    <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold flex-shrink-0">
-                      {index + 1}
-                    </div>
-
-                    <div>
-
-                      <h4 className="font-display text-lg font-semibold text-foreground mb-2">
-                        {phase.title}
-                      </h4>
-
-                      <p className="text-muted-foreground">
-                        {phase.description}
-                      </p>
-
-                    </div>
-
-                  </div>
-                </div>
-              ))}
-
-            </div>
-          </div>
+       
 
           {/* =====================================================
               PROJECT COMPONENTS

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
 import {
-  Wheat,
+  
   Monitor,
   Briefcase,
   Users,
@@ -14,6 +14,7 @@ import {
   MapPin,
   Phone,
   Mail,
+  Store,
 } from "lucide-react";
 import cooperativeSummit from "@/assets/cooperative-summit.jpg";
 import trainingSession from "@/assets/training-session.jpg";
@@ -30,13 +31,13 @@ const focusAreas = [
       "Strengthening cooperative societies through training, governance support, and sustainable development practices.",
   },
   {
-    icon: Wheat,
-    title: "Agricultural Empowerment",
+    icon: Briefcase,
+    title: "Consultancy",
     description:
-      "Modern farming techniques, agribusiness training, and support for crop and livestock production.",
+      "Empowering individuals and organizations with financial, social entrepreneurship, cooperative, and income-generation skills for sustainable livelihoods and positive impact.",
   },
   {
-    icon: Briefcase,
+    icon: Store,
     title: "Business & Production",
     description:
       "Entrepreneurship training, financial literacy, and support for small-scale business development.",
@@ -45,7 +46,7 @@ const focusAreas = [
     icon: Monitor,
     title: "Agric Mechanization",
     description:
-      "Agric Mechanization, input provision, aggrigation and prossessing import and export of Agricltural product and machinaries and livestock production.",
+      "Agric Mechanization, input provision, aggrigation and prossessing import and export of Agricltural product.",
   },
 ];
 
@@ -102,12 +103,7 @@ const Index = () => {
               economic development, promoting good governance and fostering sustainable peace.
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-up opacity-0 delay-400">
-              <Button variant="hero" size="xl" asChild>
-                <Link to="/register">
-                  Register for Training
-                  <ArrowRight size={20} />
-                </Link>
-              </Button>
+             
               <Button variant="heroOutline" size="xl" asChild>
                 <Link to="/contact">Partner With Us</Link>
               </Button>
@@ -148,7 +144,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Focus Areas — BDSP
+              Focus Areas
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Business Development Service Provider — empowering individuals and 
@@ -185,7 +181,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Our Training Programs
+            Cooperative Development
             </h2>
             
           </div>
@@ -207,23 +203,8 @@ const Index = () => {
                     {program.title}
                   </h3>
                 </div>
-                <div className="p-6">
-                 
-                  <Button variant="outline" size="sm" className="mt-4 w-full" asChild>
-                    <Link to="/programs">View All Courses</Link>
-                  </Button>
-                </div>
               </div>
             ))}
-          </div>
-
-          <div className="text-center mt-10">
-            <Button size="lg" asChild>
-              <Link to="/register">
-                Register for a Program
-                <ArrowRight size={18} />
-              </Link>
-            </Button>
           </div>
         </div>
       </section>
@@ -328,12 +309,7 @@ const Index = () => {
               sustainable livelihoods through our programs.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button variant="hero" size="xl" asChild>
-                <Link to="/register">
-                  Register Today
-                  <ArrowRight size={20} />
-                </Link>
-              </Button>
+             
               <Button variant="heroOutline" size="xl" asChild>
                 <Link to="/contact">Contact Us</Link>
               </Button>
